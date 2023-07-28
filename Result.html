@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Entertainment</title>
+<link rel="stylesheet" href="./css/link1.css">
+
+<!-- Content in style tag will be explained during CSS 3.0 session -->
+<style>
+body {font-family: Verdana, sans-serif; font-size:0.8em;}
+header,nav, section,article,footer,figure
+{border:1px solid rgb(36, 36, 36); margin:5px; padding:8px;}
+nav ul {margin:0; padding:0;}
+nav ul li {display:inline; margin:5px;}
+</style>
+<script>
+    function jfun1()
+    {
+        var m=parseInt(frm2.t2.value)
+        var e=parseInt(frm2.t3.value)
+        var c=parseInt(frm2.t4.value)
+        var tm=m+e+c;
+        var pm=tm/3;
+        var max;
+       
+            if(m>e&&m>c)
+            {
+                max=m;
+            }
+            else if(e>c&&e>m)
+            {
+                max=e;
+            }
+            else {
+                max=c;
+            }
+            frm2.t5.value=tm;
+            frm2.t6.value=pm;
+            frm2.t7.value=max;
+        
+	
+	}
+</script>
+</head>
+
+
+
+
+<header style="background-color:rgb(140, 132, 145);height:50px;text-align: center;">
+		<h1>MYSORE PALACE
+			
+	</header>
+
+	<nav style="background-color: bisque;height:50px;">
+		<ul>
+			<li><a href="Home.html">Home</a></li>
+			<li><a href="Gallery.html">Gallery</a></li>
+			<li><a href="Tickets.html">Tickets</a></li>
+			<li><a href="History.html">History</a></li>
+            <li><a href="Contact Us.html">Contact Us</a></li>
+			<li><a href="Result.html">Result</a></li>
+		</ul>
+	</nav>
+    
+
+	<section>
+		
+	
+		
+
+	</section>
+    <center>
+        <div style="background-color:rgb(62, 235, 76);width:900px;text-align: center;">
+        <h2>
+            <div style="background-color:rgb(90, 250, 186);height:50px";>
+          Result
+        
+        </div>
+        </h2>
+        <form name="frm2" 
+            <pre>
+                Name <input type="text"placeholder="Your  name here" name="t1" ><br>
+                Marks:<br>
+                <br>
+
+                Maths<input type="text"placeholder="Your marks here" name="t2">English<input type="text"placeholder="Your marks here" name="t3">Computer<input type="text"placeholder="Your marks here" name="t4"><br>
+<br>
+                Result:<br>
+                <br>
+
+                Total marks<input type="text" name="t5">Avg Marks<input type="text"name="t6">Max Marks<input type="text"name="t7"><br>
+<br>
+              <input type="button" value="Result" onclick="jfun1()">
+            </pre>
+        </form>
+    </div>
+
+        </center>
+
+			
+			
+
+	</section>
+
+
+
+	<footer style="background-color: aqua;height:30px;">
+		<p>&copy; Developed by: Akash H V</p>
+	</footer>
+
+</body>
+</html>
